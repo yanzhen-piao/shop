@@ -34,13 +34,13 @@ export default function App() {
           className="parallax-bg"
           style={{
             "background-image":
-              "url(https://uimg.huixiaoer.net/86194888/bc2238dd0a649924d5958800260da7cd.jpg)",
+              "url(https://dogefs.s3.ladydaily.com/~/source/unsplash/photo-1670272506220-f8332b178148?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80)",
           }}
           data-swiper-parallax="-23%"
         ></div>
         <SwiperSlide>
           <div className="title" data-swiper-parallax="-300">
-            Slide 1
+            欢迎光临
           </div>
           <div className="subtitle" data-swiper-parallax="-200">
             Subtitle
@@ -59,7 +59,7 @@ export default function App() {
         </SwiperSlide>
         <SwiperSlide>
           <div className="title" data-swiper-parallax="-300">
-            Slide 2
+            Enjoy
           </div>
           <div className="subtitle" data-swiper-parallax="-200">
             Subtitle

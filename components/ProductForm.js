@@ -25,7 +25,6 @@ export default function ProductForm({ product }) {
 
   const [available, setAvailable] = useState(true)
 
-  const { addToCart } = useContext(CartContext)
 
   const allVariantOptions = product.variants.edges?.map(variant => {
     const allOptions = {}
@@ -64,7 +63,7 @@ export default function ProductForm({ product }) {
       [name]: value
     }
 
-    allVariantOptions.map(item => {
+    allVariantOptions.map(item => { 
       if (JSON.stringify(item.options) === JSON.stringify(selection)) {
         setSelectedVariant(item)
       }
@@ -104,14 +103,12 @@ export default function ProductForm({ product }) {
       {
         available ?
           <button
-            onClick={() => {
-              addToCart(selectedVariant)
-            }}
+        
             className="px-2 py-3 mt-3 text-white bg-black rounded-lg hover:bg-gray-800">Add To Card
           </button> :
           <button
             className="px-2 py-3 mt-3 text-white bg-gray-800 rounded-lg cursor-not-allowed">
-              Sold out!
+              卖完了!
           </button>
       }
 

@@ -1,10 +1,13 @@
 import ProductPageContent from "../../components/ProductPageContent"
-import { getAllProducts,getProduct} from "../../lib/shopify"
-
+import { getAllProducts } from "../../lib/shopify"
+import { getProduct } from '../../lib/shopify';
 export default function ProductPage({ product }) {
 //product为什么是空的
   return (
-    <div>{product}</div>
+    <div className="min-h-screen py-12 sm:pt-20">
+    <ProductPageContent product={product} />
+    
+  </div>
   )
 }
 
